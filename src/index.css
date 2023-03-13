@@ -3,3 +3,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+button:hover p,
+button:hover img {
+  background-color: #151515;
+}
+
+button:hover p {
+  background-color: #d5966c;
+}
