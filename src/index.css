@@ -12,3 +12,14 @@ button:hover img {
 button:hover p {
   background-color: #d5966c;
 }
+.blackBox::before {
+  margin: 0 1em;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: -15%;
+  top: 0;
+  background-color: #151515;
+  z-index: -10;
+  content: "";
+}

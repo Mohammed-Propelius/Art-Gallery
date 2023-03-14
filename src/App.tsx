@@ -1,13 +1,14 @@
-import Footer from "./components/Footer";
-import ModernArt from "./templates/ModernArt";
-import YourDay from "./templates/YourDay";
+import { Route, Routes } from "react-router-dom";
+import Location from "./Pages/Location";
+import Home from "./Pages/Home";
 
 function App() {
   return (
     <div className="App">
-      <ModernArt />
-      <YourDay />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/location" element={<Location />} />
+      </Routes>
     </div>
   );
 }
