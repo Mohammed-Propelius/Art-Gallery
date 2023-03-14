@@ -1,11 +1,11 @@
 import React from "react";
 import PrimaryBtn from "../components/PrimaryBtn";
-
+import { Link } from "react-router-dom";
 const ModernArt = () => {
   return (
     <div>
       <div>
-        <div className="md:relative lg:flex lg:justify-center">
+        <div className="md:relative lg:flex lg:justify-center xl:ml-[16%] xl:max-w-[1200px]">
           <div className="hidden lg:block my-0 mx-4 w-[50%] h-full absolute left-[-20%] top-0 bg-art_black z-[1]" />
           <img
             src="/mobile/image-hero.jpg"
@@ -24,7 +24,7 @@ const ModernArt = () => {
           />
         </div>
         <div className="lg:left-[65%] md:flex md:flex-col md:absolute top-[11%] left-[58%] ">
-          <h1 className="font-bigShoulder font-black text-[55px] leading-[55px] text-art_black py-[32px] px-4 lg:absolute lg:left-[-150%] lg:top-[24%] lg:text-art_white lg:z-[1] lg:mix-blend-difference lg:text-[70px] lg:leading-[88px] lg:top-[-75%] lg:left-[-160%] xl:left-[-150%]  xl:text-[90px] xl:leading-[88px]">
+          <h1 className="font-bigShoulder font-black text-[55px] leading-[55px] text-art_black py-[32px] px-4 lg:absolute lg:left-[-150%] lg:text-art_white lg:z-[1] lg:mix-blend-difference lg:text-[70px] lg:leading-[88px] lg:top-[-75%] lg:left-[-160%] xl:left-[-120%]  xl:text-[90px] xl:leading-[88px]">
             MODERN
             <p>ART GALLERY</p>
           </h1>
@@ -35,7 +35,9 @@ const ModernArt = () => {
             and find out.
           </p>
           <div>
-            <PrimaryBtn />
+            <Link to="/location">
+              <PrimaryBtn title="our location" path="/icon-arrow-right.svg" />
+            </Link>
           </div>
         </div>
       </div>

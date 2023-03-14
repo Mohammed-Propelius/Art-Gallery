@@ -1,19 +1,14 @@
-import Footer from "./components/Footer";
-import ModernArt from "./templates/ModernArt";
-import YourDay from "./templates/YourDay";
-import MaxWrapper from "./components/MaxWrapper";
-import SecondaryWrapper from "./components/SecondaryWrapper";
+import { Route, Routes } from "react-router-dom";
+import Location from "./Pages/Location";
+import Home from "./Pages/Home";
 
 function App() {
   return (
     <div className="App">
-      <MaxWrapper>
-        <SecondaryWrapper>
-          <ModernArt />
-          <YourDay />
-          <Footer />
-        </SecondaryWrapper>
-      </MaxWrapper>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/location" element={<Location />} />
+      </Routes>
     </div>
   );
 }
