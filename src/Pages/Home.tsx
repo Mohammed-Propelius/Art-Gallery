@@ -11,7 +11,7 @@ const Home = () => {
         <SecondaryWrapper>
           <ModernArt />
           <YourDay />
-          <Footer color="art_black" textColor="art_white" />
+          <Footer color="art_black" textColor="art_white" ourLocation={false} />
         </SecondaryWrapper>
       </MaxWrapper>
     </>
