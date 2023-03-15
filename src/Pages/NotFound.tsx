@@ -21,7 +21,7 @@ const NotFound = () => {
                   <div className="four_zero_four_bg bg-cover md:bg-contain md:bg-no-repeat bg-center h-96"></div>
                   <Link
                     to="/"
-                    className="link_404 py-3 px-6 bg-art_gold text-white font-bold rounded-md hover:bg-art_black transition-all duration-300 ease-in-out"
+                    className="link_404 py-3 px-6 bg-art_gold text-white font-bold rounded-md hover:bg-art_black hover:text-art_white transition-all duration-300 ease-in-out"
                   >
                     Go Back to Gallery
                   </Link>
