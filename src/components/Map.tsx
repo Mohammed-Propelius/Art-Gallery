@@ -32,7 +32,7 @@ const Map = () => {
     })
       .setLngLat(position)
       .addTo(map.current);
-    marker._element.src = "../../public/icon-location.svg"; // set the source of the image
+    marker._element.src = "/icon-location.svg"; // set the source of the image
   });
   return (
     <>
