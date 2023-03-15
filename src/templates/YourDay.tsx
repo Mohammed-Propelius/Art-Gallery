@@ -2,7 +2,7 @@ import React from "react";
 
 const YourDay = () => {
   return (
-    <div>
+    <>
       <div className=" md:flex md:flex-row-reverse">
         <div className="mx-[16px] mt-[120px]">
           <img
@@ -84,7 +84,7 @@ const YourDay = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
